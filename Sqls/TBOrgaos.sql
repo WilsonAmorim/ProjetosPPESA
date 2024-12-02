@@ -1,4 +1,4 @@
-CREATE TABLE `sys`.`tborgaos` (
+CREATE TABLE `ppeconecao`.`tborgaos` (
   `idtborgaos` INT NOT NULL AUTO_INCREMENT,
   `Sigla` VARCHAR(45),
   `tborgaosidtbConvenio` INT NOT NULL,
