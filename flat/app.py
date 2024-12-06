@@ -12,7 +12,7 @@ session = Session()
 
 
 
-def main(page: ft.page):
+def main(page: ft.Page):
     page.title = "Cadastro App"
 
     lista_produtos = ft.ListView()

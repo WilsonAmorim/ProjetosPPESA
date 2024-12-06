@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=1920"/>
+    <meta name="description"
+          content="Tizen Download API Demo" />
+
+    <title>Tizen Download API</title>
+
+    <script>
+        window.onload = function () {
+            var visivel, estilo;
+            document.getElementById("invisivel").style.visibility = "hidden";
+            document.getElementById("nome").onkeyup = function () {
+                document.getElementById("invisivel").value = this.value;
+            };
+            document.getElementById("mostrar").onclick = function () {
+                if (document.getElementById("invisivel").style.visibility === "hidden") {
+                    visivel = "visible";    
+                } else {
+                    visivel = "hidden";    
+                }
+                document.getElementById("invisivel").style.visibility = visivel;
+            };
+        };
+        </script>
+    
+
+    
+
+</head>
+
+<body>
+
+    <h1>Tizen Download API</h1>
+
+    <div>
+        <h2>Available buttons/actions:</h2>
+
+        <div>
+            <input id="nome" type="text" value="usuario" /><br>
+            <button id="mostrar">Esconder / Mostrar Valor</button><br>
+            <input id="invisivel" type="text" value="Digite algo encima"/>
+        </div>
+
+        <div>
+            <div></div>
+        </div>
+
+        <fieldset>
+            <legend>Downloaded files:</legend>
+            <div></div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Logs</legend>
+            <div></div>
+        </fieldset>
+    </div>
+    <div >
+        <h2>Info</h2>
+
+        <p>This application demonstrates the usage of Tizen download API</p>
+
+        <p>The application downloads files from  and . If these domains are not accessible it will not work.<br>
+
+            You can change the source location of files to download by changing the contents of  and  variables in file</p>
+    </div>
+
+    
+</body>
+</html>
